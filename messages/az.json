@@ -1,0 +1,228 @@
+{
+  "meta": {
+    "title": "Air-Art MMC — Peşəkar HVAC və Mühəndislik Həlləri",
+    "description": "Air-Art MMC — isitmə, soyutma, havalandırma, VRF, chiller və qazanxana sistemləri üzrə 23 illik təcrübəyə malik mühəndislik şirkətidir. Layihələndirmə, quraşdırma və satışdan sonrakı texniki xidmət."
+  },
+  "nav": {
+    "home": "Ana səhifə",
+    "about": "Haqqımızda",
+    "services": "Xidmətlər",
+    "projects": "Layihələr",
+    "partners": "Tərəfdaşlar",
+    "contact": "Əlaqə",
+    "menu": "Menyu",
+    "close": "Bağla",
+    "skipToContent": "Əsas məzmuna keç"
+  },
+  "hero": {
+    "eyebrow": "Mühəndislik · HVAC · Enerji",
+    "headline": "Peşəkar HVAC və Mühəndislik Həlləri",
+    "subtitle": "23 illik təcrübə ilə isitmə, soyutma, havalandırma, VRF, chiller və qazanxana sistemlərinin layihələndirilməsi, quraşdırılması və texniki xidməti.",
+    "ctaServices": "Xidmətlərimiz",
+    "ctaContact": "Bizimlə əlaqə",
+    "cardTitle": "Kompleks mühəndislik",
+    "cardSubtitle": "Layihə · Təchizat · Quraşdırma · Servis",
+    "badges": ["VRF", "Chiller", "Qazanxana", "AHU", "BMS"]
+  },
+  "stats": {
+    "experience": { "value": "23+", "label": "İllik mühəndislik təcrübəsi" },
+    "toshiba": { "value": "12+", "label": "Toshiba və Air Plus tərəfdaşlığı" },
+    "projects": { "value": "100+", "label": "Tamamlanmış layihə" },
+    "solutions": { "value": "Tam həllər", "label": "HVAC, VRF, chiller və qazanxana sistemləri üzrə" }
+  },
+  "about": {
+    "eyebrow": "Şirkət haqqında",
+    "title": "Etibar və texniki dərinlik üzərində qurulan mühəndislik şirkəti",
+    "lead": "Air-Art MMC müasir isitmə, soyutma və havalandırma texnologiyalarını təqdim edir — layihələndirmədən təchizat, quraşdırma və uzunmüddətli texniki xidmətə qədər.",
+    "body": "İyirmi ildən artıq müddətdə ofislər, xəstəxanalar, otellər, ticarət mərkəzləri və sənaye obyektləri üçün komfort və proses iqlim sistemlərini həyata keçirmişik. İşimiz tanınmış brendləri, intizamlı mühəndisliyi və etibarlı satışdan sonrakı dəstəyi birləşdirir.",
+    "values": {
+      "experience": {
+        "title": "Sınanmış təcrübə",
+        "desc": "Mühəndislik sahəsində 23 il və Azərbaycanda Toshiba və Air Plus-un rəsmi tərəfdaşı kimi 12 il."
+      },
+      "quality": {
+        "title": "Mühəndislik keyfiyyəti",
+        "desc": "Hər layihədə detallı dizayn, ixtisaslı quraşdırma komandaları və intizamlı işə salma."
+      },
+      "efficiency": {
+        "title": "Enerji səmərəliliyi",
+        "desc": "Binanın bütün həyat dövrü boyu enerji istehlakını azaltmaq üçün seçilmiş və tənzimlənmiş həllər."
+      }
+    }
+  },
+  "services": {
+    "eyebrow": "Xidmətlər",
+    "title": "Tam mühəndislik xidmətləri",
+    "subtitle": "İlk eskizdən uzunmüddətli texniki xidmətə qədər mexaniki və elektrik mühəndisliyinin hər mərhələsini əhatə edirik.",
+    "items": {
+      "hvac": {
+        "title": "HVAC sistemləri",
+        "desc": "Komfort, gigiyena və enerji səmərəliliyi üçün layihələndirilmiş isitmə, havalandırma və kondisioner sistemləri."
+      },
+      "vrf": {
+        "title": "VRF sistemləri",
+        "desc": "Ofislər, otellər və çoxzonalı kommersiya binaları üçün yüksək səmərəli VRF/VRV həlləri."
+      },
+      "chiller": {
+        "title": "Chiller sistemləri",
+        "desc": "Böyük kommersiya, səhiyyə və sənaye obyektləri üçün hava və su soyudulan chiller stansiyaları."
+      },
+      "ventilation": {
+        "title": "Havalandırma sistemləri",
+        "desc": "Mərkəzi və zona havalandırma, istilik bərpalı AHU, tüstüçəkmə və laminar axın sistemləri."
+      },
+      "boiler": {
+        "title": "Qazanxana sistemləri",
+        "desc": "İsitmə və isti su üçün qazanxanalar — layihə, avadanlıq təchizatı, quraşdırma və işə salma."
+      },
+      "plumbing": {
+        "title": "Su təchizatı sistemləri",
+        "desc": "Kommersiya, səhiyyə və yaşayış binaları üçün təmiz su və kanalizasiya sistemləri."
+      },
+      "fire": {
+        "title": "Su əsaslı yanğınsöndürmə",
+        "desc": "Tətbiq olunan yanğın təhlükəsizliyi standartlarına uyğun sprinkler və hidrant sistemləri."
+      },
+      "electrical": {
+        "title": "Elektrik işləri",
+        "desc": "HVAC və mexaniki sistemlər üçün enerji paylanması, idarəetmə panelləri və mühəndislik."
+      },
+      "design": {
+        "title": "Layihələndirmə",
+        "desc": "İxtisaslı mühəndislər tərəfindən hazırlanan konsept, detallı dizayn, hesablamalar və sənədləşmə."
+      },
+      "installation": {
+        "title": "Quraşdırma və servis",
+        "desc": "Peşəkar quraşdırma, işə salma, texniki qulluq və uzunmüddətli satışdan sonrakı dəstək."
+      }
+    }
+  },
+  "industries": {
+    "eyebrow": "Tətbiq sahələri",
+    "title": "Sistemlərimizin hər gün işlədiyi obyektlər",
+    "subtitle": "Geniş kommersiya, səhiyyə, qonaqpərvərlik və sənaye obyektlərində mühəndislik həlləri təqdim edirik.",
+    "items": [
+      "Biznes mərkəzləri",
+      "Ticarət mərkəzləri",
+      "Ofis binaları",
+      "Xəstəxana və klinikalar",
+      "Otellər",
+      "Restoran və kafelər",
+      "Anbarlar",
+      "Villalar",
+      "Sənaye obyektləri"
+    ]
+  },
+  "projects": {
+    "eyebrow": "Layihələr",
+    "title": "Seçilmiş portfel",
+    "subtitle": "Kommersiya, səhiyyə və qonaqpərvərlik sahələrində icra olunmuş geniş miqyaslı layihələrdən seçmələr.",
+    "viewDetails": "Ətraflı bax",
+    "area": "Sahə",
+    "scope": "İş həcmi",
+    "sqm": "m²",
+    "items": {
+      "babek-deniz-plaza": {
+        "name": "Babək Plaza / Dəniz Plaza",
+        "scope": "Mərkəzi kondisioner sistemi."
+      },
+      "ravy-tower": {
+        "name": "Ravy Tower",
+        "scope": "Hava emalı qurğusunun quraşdırılması, tüstüçəkmə, AHU və VRF kanal sistemləri."
+      },
+      "ganja-prosecutor": {
+        "name": "Gəncə Şəhər Prokurorluğu binası",
+        "scope": "Chiller, qazanxana, təmiz su, kanalizasiya, yanğınsöndürmə sistemləri, AHU."
+      },
+      "old-town-plaza": {
+        "name": "Old Town Plaza",
+        "scope": "Toshiba VRF, havalandırma və su əsaslı yanğınsöndürmə sistemi."
+      },
+      "lux-international-hospital": {
+        "name": "Lux International Hospital",
+        "scope": "Higiyenik AHU, laminar axın, HEPA filtrasiya, chiller, Toshiba VRF."
+      },
+      "agh-sheher-office": {
+        "name": "Ağ Şəhər ofis binası",
+        "scope": "Mitsubishi Electric VRF və havalandırma sistemləri."
+      },
+      "west-hospital": {
+        "name": "West Hospital",
+        "scope": "Higiyenik AHU, havalandırma, Toshiba VRF, qazanxana, oksigen və vakuum xətləri."
+      },
+      "yasmin-shopping-center": {
+        "name": "Yasmin Shopping Center",
+        "scope": "Mərkəzi havalandırma və Toshiba VRF sistemi."
+      },
+      "villas": {
+        "name": "Fərdi villalar",
+        "scope": "Chiller, qazanxana və döşəmədən isitmə."
+      },
+      "almet-exhibition": {
+        "name": "Almet Sərgi Salonu",
+        "scope": "Mexaniki mühəndislik və quraşdırma."
+      },
+      "narimanov-office": {
+        "name": "Nərimanov ofis binası",
+        "scope": "Mexaniki mühəndislik və quraşdırma."
+      }
+    }
+  },
+  "partners": {
+    "eyebrow": "Tərəfdaşlar",
+    "title": "Etibar etdiyimiz brendlər",
+    "subtitle": "Davamlı, səmərəli və xidmət oluna bilən mühəndislik sistemləri təqdim etmək üçün tanınmış istehsalçılarla işləyirik."
+  },
+  "why": {
+    "eyebrow": "Niyə Air-Art",
+    "title": "Etibar edə biləcəyiniz mühəndislik tərəfdaşı",
+    "subtitle": "Təcrübə, daxili ekspertiza və etibarlı brendlərin birləşməsi — tamamlanmış layihələrin real portfeli ilə dəstəklənir.",
+    "items": [
+      { "title": "23 illik təcrübə", "desc": "Mexaniki və elektrik mühəndisliyində iyirmi ildən artıq praktika." },
+      { "title": "Peşəkar mühəndis komandası", "desc": "İxtisaslı dizayn, quraşdırma və servis mütəxəssisləri." },
+      { "title": "Tam layihə icrası", "desc": "Dizayndan işə salmaya qədər bir məsuliyyət altında." },
+      { "title": "Enerji səmərəli həllər", "desc": "Uzunmüddətli səmərəlilik üçün seçilmiş avadanlıq və idarəetmə." },
+      { "title": "Satışdan sonrakı texniki dəstək", "desc": "Texniki xidmət və servis müqavilələri uzunmüddətli iş qabiliyyətini qoruyur." },
+      { "title": "Geniş miqyaslı real portfel", "desc": "Ofislər, xəstəxanalar, otellər və sənaye obyektləri üzrə referanslar." }
+    ]
+  },
+  "contact": {
+    "eyebrow": "Əlaqə",
+    "title": "Layihəniz haqqında danışaq",
+    "subtitle": "Bina və ya obyektiniz haqqında bizə məlumat verin — mühəndislərimiz fərdi təklifimizlə geri dönəcək.",
+    "addressLabel": "Ünvan",
+    "phoneLabel": "Telefon",
+    "emailLabel": "E-poçt",
+    "hoursLabel": "İş saatları",
+    "addressValue": "Ağ Şəhər, Mərkəz Bulvar küçəsi 8",
+    "phoneValue": "+994 XX XXX XX XX",
+    "emailValue": "info@airart.az",
+    "hoursValue": "B.e — C, 09:00 — 18:00",
+    "mapTitle": "Ofisin yerləşməsi",
+    "mapPlaceholder": "Google Maps yerləşdiriləcək",
+    "form": {
+      "title": "Bizə mesaj göndərin",
+      "name": "Ad və soyad",
+      "namePlaceholder": "Ad və soyadınız",
+      "phone": "Telefon",
+      "phonePlaceholder": "+994 ...",
+      "email": "E-poçt",
+      "emailPlaceholder": "siz@nümunə.com",
+      "service": "Xidmət növü",
+      "selectService": "Xidmət seçin",
+      "message": "Mesaj",
+      "messagePlaceholder": "Layihənizi qısaca təsvir edin...",
+      "submit": "Mesajı göndər",
+      "sending": "Göndərilir...",
+      "success": "Təşəkkür edirik. Mesajınız qəbul olundu — komandamız tezliklə sizinlə əlaqə saxlayacaq.",
+      "required": "Məcburi sahə"
+    }
+  },
+  "footer": {
+    "tagline": "Müasir isitmə, soyutma və havalandırma texnologiyaları üzrə ixtisaslaşmış mühəndislik şirkəti.",
+    "quickLinks": "Sürətli keçidlər",
+    "servicesTitle": "Xidmətlər",
+    "contactTitle": "Əlaqə",
+    "rights": "Bütün hüquqlar qorunur."
+  }
+}
