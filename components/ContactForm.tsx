@@ -46,7 +46,7 @@ export function ContactForm({ form, serviceItems }: Props) {
   return (
     <form
       onSubmit={handleSubmit}
-      className="relative overflow-hidden rounded-[2rem] border border-white/12 bg-white/[0.07] p-6 text-white shadow-[0_30px_90px_rgba(0,0,0,0.26)] backdrop-blur sm:p-8"
+      className="theme-dark-card relative overflow-hidden rounded-[2rem] border border-white/12 bg-white/[0.07] p-6 text-white shadow-[0_30px_90px_rgba(0,0,0,0.26)] backdrop-blur sm:p-8"
       noValidate
     >
       <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-tech/80 to-transparent" />
@@ -55,7 +55,7 @@ export function ContactForm({ form, serviceItems }: Props) {
         className="absolute inset-0 bg-[linear-gradient(120deg,rgba(23,136,213,0.14),transparent_34%),linear-gradient(245deg,rgba(242,165,26,0.08),transparent_32%)]"
         aria-hidden="true"
       />
-      <h3 className="relative text-xl font-semibold text-white">{form.title}</h3>
+      <h3 className="theme-card-title relative text-xl font-semibold text-white">{form.title}</h3>
 
       <div className="relative mt-6 grid gap-4 sm:grid-cols-2">
         <Field id="name" label={form.name} required>
@@ -149,15 +149,15 @@ export function ContactForm({ form, serviceItems }: Props) {
         .input {
           width: 100%;
           border-radius: 0.875rem;
-          border: 1px solid rgba(255,255,255,0.12);
-          background-color: rgba(255,255,255,0.08);
+          border: 1px solid var(--form-border);
+          background-color: var(--form-bg);
           padding: 0.82rem 0.95rem;
           font-size: 0.9rem;
-          color: #fff;
-          box-shadow: inset 0 1px 0 rgba(255,255,255,0.12);
+          color: var(--form-fg);
+          box-shadow: inset 0 1px 0 var(--form-highlight);
           transition: border-color .18s ease, box-shadow .18s ease, background-color .18s ease;
         }
-        .input::placeholder { color: rgba(255,255,255,0.38); }
+        .input::placeholder { color: var(--form-placeholder); }
         .input option {
           color: var(--color-ink);
           background: #fff;
@@ -165,8 +165,8 @@ export function ContactForm({ form, serviceItems }: Props) {
         .input:focus {
           outline: none;
           border-color: var(--color-tech);
-          background-color: rgba(255,255,255,0.11);
-          box-shadow: 0 0 0 4px rgba(23,136,213,0.18), inset 0 1px 0 rgba(255,255,255,0.14);
+          background-color: var(--form-bg-focus);
+          box-shadow: 0 0 0 4px rgba(23,136,213,0.18), inset 0 1px 0 var(--form-highlight);
         }
       `}</style>
     </form>
@@ -186,7 +186,7 @@ function Field({
 }) {
   return (
     <label htmlFor={id} className="block">
-      <span className="mb-1.5 block text-xs font-medium uppercase tracking-wide text-white/48">
+      <span className="theme-card-faint mb-1.5 block text-xs font-medium uppercase tracking-wide text-white/48">
         {label}
         {required ? <span className="ml-1 text-tech">*</span> : null}
       </span>

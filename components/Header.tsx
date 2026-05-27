@@ -55,24 +55,22 @@ export function Header({ locale, nav, ctaLabel }: Props) {
 
   return (
     <header
-      className={`fixed top-0 z-50 w-full transition-all duration-500 ${
+      className={`theme-header fixed top-0 z-50 w-full transition-all duration-500 ${
         floating
-          ? "border-b border-white/10 bg-transparent text-white"
-          : "border-b border-line/80 bg-white/90 text-ink shadow-[0_18px_44px_rgba(8,20,38,0.08)] backdrop-blur-xl"
+          ? "theme-header-floating bg-transparent text-white"
+          : "theme-header-solid bg-white/88 text-ink shadow-[0_18px_44px_rgba(8,20,38,0.08)] backdrop-blur-xl"
       }`}
     >
       <div
         className={`pointer-events-none absolute inset-0 transition-opacity duration-500 ${
           floating
-            ? "bg-gradient-to-b from-black/34 via-black/16 to-transparent opacity-100"
+            ? "opacity-0"
             : "opacity-0"
         }`}
         aria-hidden="true"
       />
       <div
-        className={`pointer-events-none absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent transition-opacity duration-500 ${
-          floating ? "via-white/24" : "via-tech/45"
-        } to-transparent`}
+        className="pointer-events-none absolute inset-x-0 bottom-0 h-px bg-transparent"
         aria-hidden="true"
       />
 
@@ -81,17 +79,17 @@ export function Header({ locale, nav, ctaLabel }: Props) {
 
         <nav
           aria-label="Primary"
-          className={`hidden items-center gap-1 rounded-full p-1 transition-all duration-500 lg:flex ${
+          className={`theme-header-nav hidden items-center gap-1 rounded-full p-1 transition-all duration-500 lg:flex ${
             floating
-              ? "border border-transparent bg-transparent"
-              : "border border-line/80 bg-white/70 shadow-sm backdrop-blur"
+              ? "bg-transparent shadow-none backdrop-blur-0"
+              : "bg-white/68 shadow-[0_14px_34px_rgba(8,20,38,0.08)] backdrop-blur"
           }`}
         >
           {items.map((item) => (
             <Link
               key={item.href}
               href={item.href}
-              className={`group relative rounded-full px-3.5 py-2 text-sm font-semibold transition-colors ${
+              className={`theme-header-link group relative rounded-full px-3.5 py-2 text-sm font-semibold transition-colors ${
                 floating
                   ? "text-white/88 hover:text-white"
                   : "text-ink/72 hover:text-navy"
@@ -115,9 +113,9 @@ export function Header({ locale, nav, ctaLabel }: Props) {
 
           <Link
             href={`/${locale}#contact`}
-            className={`shine-hover hidden rounded-full px-5 py-2.5 text-sm font-semibold shadow-[0_12px_26px_rgba(7,21,40,0.2)] transition-all hover:shadow-[0_16px_34px_rgba(7,21,40,0.28)] lg:inline-flex ${
+            className={`theme-header-cta shine-hover hidden rounded-full px-5 py-2.5 text-sm font-semibold shadow-[0_12px_26px_rgba(7,21,40,0.2)] transition-all hover:shadow-[0_16px_34px_rgba(7,21,40,0.28)] lg:inline-flex ${
               floating
-                ? "border border-white/16 bg-white/12 text-white backdrop-blur hover:bg-white/18"
+                ? "bg-transparent text-white shadow-none backdrop-blur-0 hover:bg-white/8"
                 : "bg-navy text-white hover:bg-navy-800"
             }`}
           >
@@ -130,10 +128,10 @@ export function Header({ locale, nav, ctaLabel }: Props) {
             aria-controls="mobile-menu"
             aria-label={open ? nav.close : nav.menu}
             onClick={() => setOpen((v) => !v)}
-            className={`inline-flex h-10 w-10 items-center justify-center rounded-xl border shadow-sm transition lg:hidden ${
+            className={`theme-menu-button inline-flex h-10 w-10 items-center justify-center rounded-xl shadow-sm transition lg:hidden ${
               floating
-                ? "border-white/18 bg-white/12 text-white backdrop-blur hover:bg-white/18"
-                : "border-line bg-white text-navy hover:bg-mist"
+                ? "bg-transparent text-white shadow-none backdrop-blur-0 hover:bg-white/8"
+                : "bg-white/76 text-navy hover:bg-mist"
             }`}
           >
             <svg
@@ -164,7 +162,7 @@ export function Header({ locale, nav, ctaLabel }: Props) {
 
       <div
         id="mobile-menu"
-        className={`lg:hidden ${open ? "block" : "hidden"} border-t border-line bg-white shadow-2xl shadow-navy/10`}
+        className={`theme-mobile-menu lg:hidden ${open ? "block" : "hidden"} bg-white shadow-2xl shadow-navy/10`}
       >
         <nav aria-label="Mobile" className="mx-auto max-w-7xl px-4 py-4 sm:px-6">
           <ul className="flex flex-col">
@@ -173,19 +171,19 @@ export function Header({ locale, nav, ctaLabel }: Props) {
                 <Link
                   href={item.href}
                   onClick={() => setOpen(false)}
-                  className="block rounded-xl px-3 py-3 text-base font-medium text-ink transition hover:bg-mist hover:text-navy"
+                  className="theme-mobile-link block rounded-xl px-3 py-3 text-base font-medium text-ink transition hover:bg-mist hover:text-navy"
                 >
                   {item.label}
                 </Link>
               </li>
             ))}
           </ul>
-          <div className="mt-4 flex items-center justify-between border-t border-line pt-4">
+          <div className="mt-4 flex items-center justify-between gap-3 pt-4">
             <LanguageSwitcher current={locale} />
             <Link
               href={`/${locale}#contact`}
               onClick={() => setOpen(false)}
-              className="rounded-full bg-navy px-4 py-2 text-sm font-semibold text-white shadow-sm"
+              className="theme-header-cta rounded-full bg-navy px-4 py-2 text-sm font-semibold text-white shadow-sm"
             >
               {ctaLabel}
             </Link>

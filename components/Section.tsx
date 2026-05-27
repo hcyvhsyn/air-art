@@ -8,9 +8,9 @@ interface Props {
 }
 
 const TONES = {
-  light: "bg-[#f5f8fc] text-ink",
-  mist: "bg-[#eef4f9] text-ink section-noise",
-  dark: "bg-[#050b14] text-white",
+  light: "theme-section-light",
+  mist: "theme-section-mist section-noise",
+  dark: "theme-section-dark",
 };
 
 export function Section({
@@ -25,7 +25,7 @@ export function Section({
   return (
     <section
       id={id}
-      className={`relative isolate scroll-mt-24 overflow-hidden ${TONES[tone]} py-20 sm:py-24 lg:py-[7.5rem]`}
+      className={`theme-section relative isolate scroll-mt-24 overflow-hidden ${TONES[tone]} py-20 sm:py-24 lg:py-[7.5rem]`}
     >
       {isDark ? (
         <>
@@ -73,7 +73,7 @@ export function Section({
           ) : null}
           <h2
             className={`mt-4 max-w-3xl text-3xl font-semibold leading-tight tracking-tight sm:text-4xl lg:text-[46px] ${
-              isDark ? "text-white drop-shadow-[0_18px_42px_rgba(0,0,0,0.35)]" : "text-navy"
+              isDark ? "theme-section-heading drop-shadow-[0_18px_42px_rgba(0,0,0,0.35)]" : "text-navy"
             }`}
           >
             {title}
@@ -81,7 +81,7 @@ export function Section({
           {subtitle ? (
             <p
               className={`mt-4 max-w-2xl text-base leading-relaxed sm:text-lg ${
-                isDark ? "text-white/70" : "text-muted"
+                isDark ? "theme-section-muted" : "text-muted"
               }`}
             >
               {subtitle}

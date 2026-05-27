@@ -19,14 +19,14 @@ export function Partners({ copy }: Props) {
       subtitle={copy.subtitle}
       tone="dark"
     >
-      <div className="overflow-hidden rounded-[2rem] border border-white/12 bg-white/[0.065] shadow-[0_30px_90px_rgba(0,0,0,0.25)] backdrop-blur">
+      <div className="theme-dark-panel overflow-hidden rounded-[2rem] border border-white/12 bg-white/[0.065] shadow-[0_30px_90px_rgba(0,0,0,0.25)] backdrop-blur">
         <div className="relative border-b border-white/10 px-6 py-5 text-white">
           <div className="absolute inset-0 bg-grid-dark opacity-35" aria-hidden="true" />
           <div className="relative flex flex-wrap items-center justify-between gap-3">
-            <span className="text-sm font-semibold uppercase tracking-[0.2em] text-white/58">
+            <span className="theme-card-faint text-sm font-semibold uppercase tracking-[0.2em] text-white/58">
               Air-Art network
             </span>
-            <span className="text-sm font-medium text-white/72">
+            <span className="theme-card-muted text-sm font-medium text-white/72">
               {partners.length} OEM
             </span>
           </div>

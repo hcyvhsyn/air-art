@@ -21,12 +21,12 @@ export function LanguageSwitcher({ current, variant = "header" }: Props) {
 
   return (
     <div
-      className={`inline-flex items-center rounded-full border p-0.5 text-xs font-medium ${
+      className={`theme-language-switcher inline-flex items-center rounded-full p-0.5 text-xs font-medium ${
         variant === "footer"
-          ? "border-white/15 bg-white/5"
+          ? "border border-white/15 bg-white/5"
           : variant === "hero"
-            ? "border-white/16 bg-white/10 backdrop-blur"
-          : "border-line bg-white/70 backdrop-blur"
+            ? "bg-transparent"
+          : "bg-white/70 backdrop-blur"
       }`}
       role="group"
       aria-label="Language"
@@ -38,12 +38,12 @@ export function LanguageSwitcher({ current, variant = "header" }: Props) {
             key={locale}
             href={buildHref(locale)}
             aria-current={active ? "true" : undefined}
-            className={`min-w-[34px] rounded-full px-2.5 py-1 text-center uppercase tracking-wide transition-colors ${
+            className={`theme-language-link ${active ? "theme-language-link-active" : ""} min-w-[34px] rounded-full px-2.5 py-1 text-center uppercase tracking-wide transition-colors ${
               active
                 ? variant === "footer"
                   ? "bg-white text-navy"
                   : variant === "hero"
-                    ? "bg-white text-navy"
+                    ? "bg-transparent text-white underline decoration-white/70 underline-offset-4"
                   : "bg-navy text-white"
                 : variant === "footer"
                   ? "text-white/70 hover:text-white"

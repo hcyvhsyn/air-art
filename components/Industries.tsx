@@ -29,7 +29,7 @@ export function Industries({ copy }: Props) {
       title={copy.title}
       subtitle={copy.subtitle}
     >
-      <div className="relative overflow-hidden rounded-[2rem] border border-navy/10 bg-[#07111f] p-4 shadow-[0_34px_90px_rgba(8,20,38,0.18)] sm:p-5 lg:p-6">
+      <div className="theme-dark-panel relative overflow-hidden rounded-[2rem] border border-navy/10 bg-[#07111f] p-4 shadow-[0_34px_90px_rgba(8,20,38,0.18)] sm:p-5 lg:p-6">
         <div className="absolute inset-0 bg-grid-dark opacity-35" aria-hidden="true" />
         <div
           className="absolute inset-0 bg-[linear-gradient(115deg,rgba(23,136,213,0.22),transparent_32%),linear-gradient(245deg,rgba(242,165,26,0.12),transparent_30%)]"
@@ -39,7 +39,7 @@ export function Industries({ copy }: Props) {
           {copy.items.map((item, i) => (
             <li
               key={item}
-              className="group relative flex min-h-[104px] items-center gap-4 overflow-hidden rounded-2xl border border-white/10 bg-white/[0.07] px-4 py-4 shadow-[inset_0_1px_0_rgba(255,255,255,0.12)] backdrop-blur transition-all duration-300 hover:-translate-y-1 hover:border-tech/35 hover:bg-white/[0.1] sm:px-5"
+              className="theme-dark-card group relative flex min-h-[104px] items-center gap-4 overflow-hidden rounded-2xl border border-white/10 bg-white/[0.07] px-4 py-4 shadow-[inset_0_1px_0_rgba(255,255,255,0.12)] backdrop-blur transition-all duration-300 hover:-translate-y-1 hover:border-tech/35 hover:bg-white/[0.1] sm:px-5"
             >
               <div
                 className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-tech/80 to-transparent opacity-0 transition-opacity group-hover:opacity-100"
@@ -59,9 +59,9 @@ export function Industries({ copy }: Props) {
                   <path d={ICONS[i % ICONS.length]} />
                 </svg>
               </div>
-              <span className="text-sm font-semibold text-white sm:text-base">{item}</span>
+              <span className="theme-card-title text-sm font-semibold text-white sm:text-base">{item}</span>
               <span
-                className="ml-auto hidden h-8 w-8 shrink-0 place-items-center rounded-full border border-white/10 text-[10px] font-semibold text-white/42 transition-colors group-hover:border-tech/35 group-hover:text-tech-100 sm:grid"
+                className="theme-card-faint ml-auto hidden h-8 w-8 shrink-0 place-items-center rounded-full border border-white/10 text-[10px] font-semibold text-white/42 transition-colors group-hover:border-tech/35 group-hover:text-tech-100 sm:grid"
                 aria-hidden="true"
               >
                 {String(i + 1).padStart(2, "0")}

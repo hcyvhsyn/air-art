@@ -48,7 +48,7 @@ export function Contact({ copy, serviceItems }: Props) {
             {details.map((d) => (
               <li
                 key={d.label}
-                className="group relative overflow-hidden rounded-[1.5rem] border border-white/12 bg-white/[0.07] p-5 shadow-[0_20px_64px_rgba(0,0,0,0.2)] backdrop-blur transition-all duration-300 hover:-translate-y-1 hover:border-tech/35 hover:bg-white/[0.1]"
+                className="theme-dark-card group relative overflow-hidden rounded-[1.5rem] border border-white/12 bg-white/[0.07] p-5 shadow-[0_20px_64px_rgba(0,0,0,0.2)] backdrop-blur transition-all duration-300 hover:-translate-y-1 hover:border-tech/35 hover:bg-white/[0.1]"
               >
                 <div className="absolute inset-0 bg-grid-dark opacity-0 transition-opacity group-hover:opacity-25" aria-hidden="true" />
                 <div className="relative flex items-start gap-4">
@@ -56,18 +56,18 @@ export function Contact({ copy, serviceItems }: Props) {
                     <DetailIcon name={d.icon} />
                   </div>
                   <div className="min-w-0">
-                    <div className="text-[11px] font-semibold uppercase tracking-wider text-white/42">
+                    <div className="theme-card-faint text-[11px] font-semibold uppercase tracking-wider text-white/42">
                       {d.label}
                     </div>
                     {d.href ? (
                       <a
                         href={d.href}
-                        className="mt-1 block text-sm font-medium text-white underline-offset-4 hover:underline"
+                        className="theme-card-title mt-1 block text-sm font-medium text-white underline-offset-4 hover:underline"
                       >
                         {d.value}
                       </a>
                     ) : (
-                      <div className="mt-1 text-sm font-medium text-white">{d.value}</div>
+                      <div className="theme-card-title mt-1 text-sm font-medium text-white">{d.value}</div>
                     )}
                   </div>
                 </div>
@@ -75,7 +75,7 @@ export function Contact({ copy, serviceItems }: Props) {
             ))}
           </ul>
 
-          <div className="mt-6 overflow-hidden rounded-[1.75rem] border border-white/12 bg-white/[0.07] shadow-[0_24px_70px_rgba(0,0,0,0.22)] backdrop-blur">
+          <div className="theme-dark-card mt-6 overflow-hidden rounded-[1.75rem] border border-white/12 bg-white/[0.07] shadow-[0_24px_70px_rgba(0,0,0,0.22)] backdrop-blur">
             <div className="map-blueprint relative aspect-[4/3] w-full bg-[#07111f]">
               <div className="absolute inset-0 bg-grid-dark opacity-45" aria-hidden="true" />
               <div className="absolute left-[14%] top-[25%] h-24 w-24 rounded-[1.5rem] border border-tech/25 bg-white/8 shadow-inner" aria-hidden="true" />

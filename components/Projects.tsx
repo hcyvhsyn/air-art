@@ -46,7 +46,7 @@ export function Projects({ copy, locale }: Props) {
           const featured = index === 0;
           return (
             <li key={project.id} className={featured ? "sm:col-span-2" : undefined}>
-              <article className="group flex h-full flex-col overflow-hidden rounded-[1.75rem] border border-white/12 bg-white/[0.065] shadow-[0_26px_80px_rgba(0,0,0,0.26)] backdrop-blur transition-all duration-300 hover:-translate-y-1 hover:border-tech/35 hover:bg-white/[0.085]">
+              <article className="theme-dark-card group flex h-full flex-col overflow-hidden rounded-[1.75rem] border border-white/12 bg-white/[0.065] shadow-[0_26px_80px_rgba(0,0,0,0.26)] backdrop-blur transition-all duration-300 hover:-translate-y-1 hover:border-tech/35 hover:bg-white/[0.085]">
                 <div
                   className={`project-visual relative ${featured ? "aspect-[16/7]" : "aspect-[16/10]"}`}
                   style={{ "--project-accent": accents[index % accents.length] } as CSSProperties}
@@ -71,23 +71,23 @@ export function Projects({ copy, locale }: Props) {
 
                 <div className="flex flex-1 flex-col p-6">
                   <div className="flex items-start justify-between gap-4">
-                    <h3 className={`${featured ? "text-2xl" : "text-lg"} font-semibold leading-snug text-white`}>
+                    <h3 className={`theme-card-title ${featured ? "text-2xl" : "text-lg"} font-semibold leading-snug text-white`}>
                       {item.name}
                     </h3>
-                    <span className="font-mono text-[11px] font-semibold uppercase tracking-[0.18em] text-white/34">
+                    <span className="theme-card-faint font-mono text-[11px] font-semibold uppercase tracking-[0.18em] text-white/34">
                       {String(index + 1).padStart(2, "0")}
                     </span>
                   </div>
                   <dl className="mt-4 space-y-2 text-sm">
                     <div className="flex gap-2">
-                      <dt className="w-20 shrink-0 text-white/42">{copy.area}</dt>
-                      <dd className="font-medium text-white/82">
+                      <dt className="theme-card-faint w-20 shrink-0 text-white/42">{copy.area}</dt>
+                      <dd className="theme-card-title font-medium text-white/82">
                         {formatArea(project.area, locale)} {copy.sqm}
                       </dd>
                     </div>
                     <div className="flex gap-2">
-                      <dt className="w-20 shrink-0 text-white/42">{copy.scope}</dt>
-                      <dd className="leading-relaxed text-white/66">{item.scope}</dd>
+                      <dt className="theme-card-faint w-20 shrink-0 text-white/42">{copy.scope}</dt>
+                      <dd className="theme-card-muted leading-relaxed text-white/66">{item.scope}</dd>
                     </div>
                   </dl>
                   <div className="mt-6 flex items-center justify-between border-t border-white/10 pt-4">

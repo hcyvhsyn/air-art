@@ -30,7 +30,7 @@ export function Services({ copy }: Props) {
           const item = copy.items[service.id];
           return (
             <li key={service.id}>
-              <article className="group relative flex h-full min-h-[250px] flex-col overflow-hidden rounded-[1.6rem] border border-white/12 bg-white/[0.065] p-5 shadow-[0_24px_70px_rgba(0,0,0,0.24)] backdrop-blur transition-all duration-300 hover:-translate-y-1 hover:border-tech/35 hover:bg-white/[0.09]">
+              <article className="theme-dark-card group relative flex h-full min-h-[250px] flex-col overflow-hidden rounded-[1.6rem] border border-white/12 bg-white/[0.065] p-5 shadow-[0_24px_70px_rgba(0,0,0,0.24)] backdrop-blur transition-all duration-300 hover:-translate-y-1 hover:border-tech/35 hover:bg-white/[0.09]">
                 <div
                   className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-tech/80 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100"
                   aria-hidden="true"
@@ -43,14 +43,14 @@ export function Services({ copy }: Props) {
                   <div className="relative grid h-12 w-12 shrink-0 place-items-center rounded-2xl border border-white/12 bg-white/9 text-tech-100 shadow-[inset_0_1px_0_rgba(255,255,255,0.14)] transition-colors group-hover:bg-tech group-hover:text-white">
                     <Icon name={service.icon} className="h-5 w-5" />
                   </div>
-                  <span className="relative font-mono text-[11px] font-semibold uppercase tracking-[0.18em] text-white/34">
+                  <span className="theme-card-faint relative font-mono text-[11px] font-semibold uppercase tracking-[0.18em] text-white/34">
                     {String(index + 1).padStart(2, "0")}
                   </span>
                 </div>
-                <h3 className="relative mt-6 text-base font-semibold leading-snug text-white">
+                <h3 className="theme-card-title relative mt-6 text-base font-semibold leading-snug text-white">
                   {item.title}
                 </h3>
-                <p className="relative mt-3 text-sm leading-relaxed text-white/62">{item.desc}</p>
+                <p className="theme-card-muted relative mt-3 text-sm leading-relaxed text-white/62">{item.desc}</p>
                 <div className="relative mt-auto pt-6">
                   <span className="block h-px w-12 bg-gradient-to-r from-tech via-emerald to-transparent transition-all duration-300 group-hover:w-24" />
                 </div>

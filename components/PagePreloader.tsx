@@ -106,7 +106,6 @@ export function PagePreloader() {
               alt=""
               fill
               priority
-              quality={100}
               unoptimized
               className="object-contain opacity-25 grayscale brightness-[0.34] contrast-125"
               sizes="(min-width: 640px) 256px, 192px"
@@ -123,7 +122,6 @@ export function PagePreloader() {
                 alt=""
                 fill
                 priority
-                quality={100}
                 unoptimized
                 className="object-contain drop-shadow-[0_0_22px_rgba(23,136,213,0.34)]"
                 sizes="(min-width: 640px) 256px, 192px"

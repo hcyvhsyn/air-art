@@ -5,6 +5,21 @@ import "../globals.css";
 import { LOCALES, hasLocale, type Locale } from "@/lib/i18n";
 import { getDictionary } from "@/lib/dictionaries";
 import { PagePreloader } from "@/components/PagePreloader";
+import { FloatingThemeToggle } from "@/components/FloatingThemeToggle";
+
+const themeScript = `
+(() => {
+  try {
+    const stored = window.localStorage.getItem("air-art-theme");
+    const theme = stored === "light" || stored === "dark" ? stored : "dark";
+    document.documentElement.dataset.theme = theme;
+    document.documentElement.style.colorScheme = theme;
+  } catch {
+    document.documentElement.dataset.theme = "dark";
+    document.documentElement.style.colorScheme = "dark";
+  }
+})();
+`;
 
 const inter = Inter({
   subsets: ["latin", "cyrillic", "latin-ext"],
@@ -64,9 +79,15 @@ export default async function RootLayout({
       lang={htmlLang[locale]}
       className={`${inter.variable} h-full`}
       data-scroll-behavior="smooth"
+      data-theme="dark"
+      suppressHydrationWarning
     >
-      <body className="min-h-full bg-white text-ink antialiased">
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: themeScript }} />
+      </head>
+      <body className="min-h-full bg-[var(--page-bg)] text-[var(--page-fg)] antialiased transition-colors duration-300">
         <PagePreloader />
+        <FloatingThemeToggle />
         {children}
       </body>
     </html>
