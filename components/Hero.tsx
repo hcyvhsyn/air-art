@@ -21,7 +21,7 @@ export function Hero({ locale, hero }: Props) {
     <section className="relative isolate min-h-[760px] overflow-hidden bg-[#07111f] text-white sm:min-h-[820px] lg:min-h-screen">
       <HeroBanner />
 
-      <div className="absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-white to-transparent" aria-hidden="true" />
+      <div className="absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-[var(--section-blend)] to-transparent" aria-hidden="true" />
 
       <div className="relative z-10 mx-auto flex min-h-[760px] max-w-7xl items-center px-4 pt-32 pb-36 sm:min-h-[820px] sm:px-6 lg:min-h-screen lg:px-8 lg:pt-36 lg:pb-40">
         <div className="animate-fade-up max-w-3xl">

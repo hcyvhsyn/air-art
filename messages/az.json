@@ -22,13 +22,31 @@
     "ctaContact": "Bizimlə əlaqə",
     "cardTitle": "Kompleks mühəndislik",
     "cardSubtitle": "Layihə · Təchizat · Quraşdırma · Servis",
-    "badges": ["VRF", "Chiller", "Qazanxana", "AHU", "BMS"]
+    "badges": [
+      "VRF",
+      "Chiller",
+      "Qazanxana",
+      "AHU",
+      "BMS"
+    ]
   },
   "stats": {
-    "experience": { "value": "23+", "label": "İllik mühəndislik təcrübəsi" },
-    "toshiba": { "value": "12+", "label": "Toshiba və Air Plus tərəfdaşlığı" },
-    "projects": { "value": "100+", "label": "Tamamlanmış layihə" },
-    "solutions": { "value": "Tam həllər", "label": "HVAC, VRF, chiller və qazanxana sistemləri üzrə" }
+    "experience": {
+      "value": "23+",
+      "label": "İllik mühəndislik təcrübəsi"
+    },
+    "toshiba": {
+      "value": "12+",
+      "label": "Toshiba və Air Plus tərəfdaşlığı"
+    },
+    "projects": {
+      "value": "100+",
+      "label": "Tamamlanmış layihə"
+    },
+    "solutions": {
+      "value": "Tam həllər",
+      "label": "HVAC, VRF, chiller və qazanxana sistemləri üzrə"
+    }
   },
   "about": {
     "eyebrow": "Şirkət haqqında",
@@ -121,6 +139,13 @@
     "area": "Sahə",
     "scope": "İş həcmi",
     "sqm": "m²",
+    "viewGallery": "Qalereyaya bax",
+    "photos": "şəkil",
+    "photo": "şəkil",
+    "gallery": "Qalereya",
+    "close": "Bağla",
+    "previous": "Əvvəlki",
+    "next": "Sonrakı",
     "items": {
       "babek-deniz-plaza": {
         "name": "Babək Plaza / Dəniz Plaza",
@@ -178,12 +203,30 @@
     "title": "Etibar edə biləcəyiniz mühəndislik tərəfdaşı",
     "subtitle": "Təcrübə, daxili ekspertiza və etibarlı brendlərin birləşməsi — tamamlanmış layihələrin real portfeli ilə dəstəklənir.",
     "items": [
-      { "title": "23 illik təcrübə", "desc": "Mexaniki və elektrik mühəndisliyində iyirmi ildən artıq praktika." },
-      { "title": "Peşəkar mühəndis komandası", "desc": "İxtisaslı dizayn, quraşdırma və servis mütəxəssisləri." },
-      { "title": "Tam layihə icrası", "desc": "Dizayndan işə salmaya qədər bir məsuliyyət altında." },
-      { "title": "Enerji səmərəli həllər", "desc": "Uzunmüddətli səmərəlilik üçün seçilmiş avadanlıq və idarəetmə." },
-      { "title": "Satışdan sonrakı texniki dəstək", "desc": "Texniki xidmət və servis müqavilələri uzunmüddətli iş qabiliyyətini qoruyur." },
-      { "title": "Geniş miqyaslı real portfel", "desc": "Ofislər, xəstəxanalar, otellər və sənaye obyektləri üzrə referanslar." }
+      {
+        "title": "23 illik təcrübə",
+        "desc": "Mexaniki və elektrik mühəndisliyində iyirmi ildən artıq praktika."
+      },
+      {
+        "title": "Peşəkar mühəndis komandası",
+        "desc": "İxtisaslı dizayn, quraşdırma və servis mütəxəssisləri."
+      },
+      {
+        "title": "Tam layihə icrası",
+        "desc": "Dizayndan işə salmaya qədər bir məsuliyyət altında."
+      },
+      {
+        "title": "Enerji səmərəli həllər",
+        "desc": "Uzunmüddətli səmərəlilik üçün seçilmiş avadanlıq və idarəetmə."
+      },
+      {
+        "title": "Satışdan sonrakı texniki dəstək",
+        "desc": "Texniki xidmət və servis müqavilələri uzunmüddətli iş qabiliyyətini qoruyur."
+      },
+      {
+        "title": "Geniş miqyaslı real portfel",
+        "desc": "Ofislər, xəstəxanalar, otellər və sənaye obyektləri üzrə referanslar."
+      }
     ]
   },
   "contact": {

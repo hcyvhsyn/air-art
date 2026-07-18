@@ -28,6 +28,7 @@ export function Industries({ copy }: Props) {
       eyebrow={copy.eyebrow}
       title={copy.title}
       subtitle={copy.subtitle}
+      tone="dark"
     >
       <div className="theme-dark-panel relative overflow-hidden rounded-[2rem] border border-navy/10 bg-[#07111f] p-4 shadow-[0_34px_90px_rgba(8,20,38,0.18)] sm:p-5 lg:p-6">
         <div className="absolute inset-0 bg-grid-dark opacity-35" aria-hidden="true" />

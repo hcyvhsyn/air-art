@@ -36,7 +36,7 @@ export function About({ about }: Props) {
   ];
 
   return (
-    <Section id="about" eyebrow={about.eyebrow} title={about.title} subtitle={about.lead}>
+    <Section id="about" eyebrow={about.eyebrow} title={about.title} subtitle={about.lead} tone="dark">
       <div className="grid gap-8 lg:grid-cols-12 lg:gap-10">
         <div className="lg:col-span-7">
           <div className="group relative min-h-[520px] overflow-hidden rounded-[2rem] border border-white/14 bg-[#07111f] shadow-[0_34px_90px_rgba(8,20,38,0.24)]">
@@ -76,14 +76,14 @@ export function About({ about }: Props) {
           {values.map((v) => (
             <article
               key={v.key}
-              className="group relative overflow-hidden rounded-[1.75rem] border border-navy/10 bg-white/82 p-6 shadow-[0_24px_70px_rgba(8,20,38,0.1)] backdrop-blur transition-all duration-300 hover:-translate-y-1 hover:border-tech/24 hover:shadow-[0_34px_90px_rgba(8,20,38,0.16)]"
+              className="theme-dark-card group relative overflow-hidden rounded-[1.75rem] border border-white/12 bg-white/[0.065] p-6 shadow-[0_24px_70px_rgba(0,0,0,0.24)] backdrop-blur transition-all duration-300 hover:-translate-y-1 hover:border-tech/35 hover:bg-white/[0.09]"
             >
-              <div className="absolute inset-0 bg-[linear-gradient(115deg,rgba(23,136,213,0.08),transparent_36%)] opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+              <div className="absolute inset-0 bg-[linear-gradient(115deg,rgba(23,136,213,0.1),transparent_36%)] opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
               <div className="relative grid h-12 w-12 place-items-center rounded-2xl bg-navy text-white shadow-[0_16px_34px_rgba(7,21,40,0.2)] transition-colors group-hover:bg-tech">
                 <Icon name={VALUE_ICONS[v.key]} className="h-5 w-5" />
               </div>
-              <h3 className="relative mt-5 text-lg font-semibold text-navy">{v.title}</h3>
-              <p className="relative mt-2 text-sm leading-relaxed text-muted">{v.desc}</p>
+              <h3 className="theme-card-title relative mt-5 text-lg font-semibold text-white">{v.title}</h3>
+              <p className="theme-card-muted relative mt-2 text-sm leading-relaxed text-white/66">{v.desc}</p>
               <div className="relative mt-6 h-px w-16 bg-gradient-to-r from-tech via-emerald to-transparent transition-all duration-300 group-hover:w-28" />
             </article>
           ))}

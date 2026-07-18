@@ -22,13 +22,31 @@
     "ctaContact": "Contact Us",
     "cardTitle": "Integrated engineering",
     "cardSubtitle": "Design · Supply · Installation · Service",
-    "badges": ["VRF", "Chiller", "Boiler", "AHU", "BMS"]
+    "badges": [
+      "VRF",
+      "Chiller",
+      "Boiler",
+      "AHU",
+      "BMS"
+    ]
   },
   "stats": {
-    "experience": { "value": "23+", "label": "Years of engineering experience" },
-    "toshiba": { "value": "12+", "label": "Years as Toshiba & Air Plus partner" },
-    "projects": { "value": "100+", "label": "Completed projects" },
-    "solutions": { "value": "End-to-end", "label": "Solutions for HVAC, VRF, chiller & boiler systems" }
+    "experience": {
+      "value": "23+",
+      "label": "Years of engineering experience"
+    },
+    "toshiba": {
+      "value": "12+",
+      "label": "Years as Toshiba & Air Plus partner"
+    },
+    "projects": {
+      "value": "100+",
+      "label": "Completed projects"
+    },
+    "solutions": {
+      "value": "End-to-end",
+      "label": "Solutions for HVAC, VRF, chiller & boiler systems"
+    }
   },
   "about": {
     "eyebrow": "About the company",
@@ -121,6 +139,13 @@
     "area": "Area",
     "scope": "Scope of work",
     "sqm": "m²",
+    "viewGallery": "View gallery",
+    "photos": "photos",
+    "photo": "photo",
+    "gallery": "Gallery",
+    "close": "Close",
+    "previous": "Previous",
+    "next": "Next",
     "items": {
       "babek-deniz-plaza": {
         "name": "Babek Plaza / Deniz Plaza",
@@ -178,12 +203,30 @@
     "title": "An engineering partner you can rely on",
     "subtitle": "A combination of experience, in-house expertise, and reliable brands — backed by a real portfolio of completed projects.",
     "items": [
-      { "title": "23 years of experience", "desc": "Over two decades of mechanical and electrical engineering practice." },
-      { "title": "Professional engineering team", "desc": "Qualified design, installation, and service specialists." },
-      { "title": "Complete project delivery", "desc": "From design to commissioning, executed under one responsibility." },
-      { "title": "Energy-efficient solutions", "desc": "Equipment selection and controls tuned for long-term efficiency." },
-      { "title": "After-sales technical support", "desc": "Maintenance and service contracts protect long-term performance." },
-      { "title": "Real large-scale portfolio", "desc": "References across offices, hospitals, hotels, and industrial sites." }
+      {
+        "title": "23 years of experience",
+        "desc": "Over two decades of mechanical and electrical engineering practice."
+      },
+      {
+        "title": "Professional engineering team",
+        "desc": "Qualified design, installation, and service specialists."
+      },
+      {
+        "title": "Complete project delivery",
+        "desc": "From design to commissioning, executed under one responsibility."
+      },
+      {
+        "title": "Energy-efficient solutions",
+        "desc": "Equipment selection and controls tuned for long-term efficiency."
+      },
+      {
+        "title": "After-sales technical support",
+        "desc": "Maintenance and service contracts protect long-term performance."
+      },
+      {
+        "title": "Real large-scale portfolio",
+        "desc": "References across offices, hospitals, hotels, and industrial sites."
+      }
     ]
   },
   "contact": {
