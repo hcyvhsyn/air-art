@@ -1,5 +1,4 @@
 export type ProjectId =
-  | "babek-deniz-plaza"
   | "ravy-tower"
   | "ganja-prosecutor"
   | "old-town-plaza"
@@ -28,7 +27,6 @@ function gallery(id: ProjectId, count: number): string[] {
 }
 
 export const projects: Project[] = [
-  { id: "babek-deniz-plaza", images: gallery("babek-deniz-plaza", 7), area: 5800 },
   { id: "ravy-tower", images: gallery("ravy-tower", 8), area: 29000 },
   { id: "ganja-prosecutor", images: gallery("ganja-prosecutor", 4), area: 4500 },
   { id: "old-town-plaza", images: gallery("old-town-plaza", 8), area: 14600, year: 2018 },

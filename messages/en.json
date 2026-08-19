@@ -147,10 +147,6 @@
     "previous": "Previous",
     "next": "Next",
     "items": {
-      "babek-deniz-plaza": {
-        "name": "Babek Plaza / Deniz Plaza",
-        "scope": "Central air-conditioning system."
-      },
       "ravy-tower": {
         "name": "Ravy Tower",
         "scope": "Air handling unit installation, smoke extraction, AHU and VRF duct installation."
@@ -238,7 +234,7 @@
     "emailLabel": "Email",
     "hoursLabel": "Working hours",
     "addressValue": "Agh Sheher, Markaz Bulvar Street 8",
-    "phoneValue": "+994 XX XXX XX XX",
+    "phoneValues": ["+994 50 222 34 48", "+994 50 824 12 22"],
     "emailValue": "info@airart.az",
     "hoursValue": "Mon — Fri, 09:00 — 18:00",
     "mapTitle": "Office location",

@@ -41,7 +41,7 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
         nav={t.nav}
         contact={{
           addressValue: t.contact.addressValue,
-          phoneValue: t.contact.phoneValue,
+          phoneValues: t.contact.phoneValues,
           emailValue: t.contact.emailValue,
         }}
         serviceItems={t.services.items}

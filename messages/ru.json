@@ -147,10 +147,6 @@
     "previous": "Назад",
     "next": "Вперёд",
     "items": {
-      "babek-deniz-plaza": {
-        "name": "Babek Plaza / Deniz Plaza",
-        "scope": "Центральная система кондиционирования."
-      },
       "ravy-tower": {
         "name": "Ravy Tower",
         "scope": "Монтаж приточных установок, дымоудаление, монтаж воздуховодов AHU и VRF."
@@ -238,7 +234,7 @@
     "emailLabel": "E-mail",
     "hoursLabel": "Часы работы",
     "addressValue": "Ağ Şəhər, ул. Mərkəz Bulvar 8",
-    "phoneValue": "+994 XX XXX XX XX",
+    "phoneValues": ["+994 50 222 34 48", "+994 50 824 12 22"],
     "emailValue": "info@airart.az",
     "hoursValue": "Пн — Пт, 09:00 — 18:00",
     "mapTitle": "Расположение офиса",

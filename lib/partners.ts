@@ -20,7 +20,16 @@ export const partners: Partner[] = [
       className: "scale-[2.15]",
     },
   },
-  { id: "air-plus", name: "Air Plus" },
+  {
+    id: "daikin",
+    name: "Daikin",
+    logo: {
+      src: "/daikin.png",
+      width: 3840,
+      height: 2160,
+      className: "scale-[1.6]",
+    },
+  },
   {
     id: "carrier",
     name: "Carrier",

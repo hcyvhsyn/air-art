@@ -16,7 +16,7 @@ interface Props {
     emailLabel: string;
     hoursLabel: string;
     addressValue: string;
-    phoneValue: string;
+    phoneValues: string[];
     emailValue: string;
     hoursValue: string;
     mapTitle: string;
@@ -28,10 +28,10 @@ interface Props {
 
 export function Contact({ copy, serviceItems }: Props) {
   const details = [
-    { label: copy.addressLabel, value: copy.addressValue, icon: "pin" as const },
-    { label: copy.phoneLabel, value: copy.phoneValue, icon: "phone" as const, href: `tel:${copy.phoneValue.replace(/\s+/g, "")}` },
-    { label: copy.emailLabel, value: copy.emailValue, icon: "mail" as const, href: `mailto:${copy.emailValue}` },
-    { label: copy.hoursLabel, value: copy.hoursValue, icon: "clock" as const },
+    { label: copy.addressLabel, values: [copy.addressValue], icon: "pin" as const },
+    { label: copy.phoneLabel, values: copy.phoneValues, icon: "phone" as const, href: (v: string) => `tel:${v.replace(/\s+/g, "")}` },
+    { label: copy.emailLabel, values: [copy.emailValue], icon: "mail" as const, href: (v: string) => `mailto:${v}` },
+    { label: copy.hoursLabel, values: [copy.hoursValue], icon: "clock" as const },
   ];
 
   return (
@@ -59,16 +59,23 @@ export function Contact({ copy, serviceItems }: Props) {
                     <div className="theme-card-faint text-[11px] font-semibold uppercase tracking-wider text-white/42">
                       {d.label}
                     </div>
-                    {d.href ? (
-                      <a
-                        href={d.href}
-                        className="theme-card-title mt-1 block text-sm font-medium text-white underline-offset-4 hover:underline"
-                      >
-                        {d.value}
-                      </a>
-                    ) : (
-                      <div className="theme-card-title mt-1 text-sm font-medium text-white">{d.value}</div>
-                    )}
+                    <div className="mt-1 space-y-1">
+                      {d.values.map((value) =>
+                        d.href ? (
+                          <a
+                            key={value}
+                            href={d.href(value)}
+                            className="theme-card-title block text-sm font-medium text-white underline-offset-4 hover:underline"
+                          >
+                            {value}
+                          </a>
+                        ) : (
+                          <div key={value} className="theme-card-title text-sm font-medium text-white">
+                            {value}
+                          </div>
+                        ),
+                      )}
+                    </div>
                   </div>
                 </div>
               </li>

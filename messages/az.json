@@ -147,10 +147,6 @@
     "previous": "Əvvəlki",
     "next": "Sonrakı",
     "items": {
-      "babek-deniz-plaza": {
-        "name": "Babək Plaza / Dəniz Plaza",
-        "scope": "Mərkəzi kondisioner sistemi."
-      },
       "ravy-tower": {
         "name": "Ravy Tower",
         "scope": "Hava emalı qurğusunun quraşdırılması, tüstüçəkmə, AHU və VRF kanal sistemləri."
@@ -238,7 +234,7 @@
     "emailLabel": "E-poçt",
     "hoursLabel": "İş saatları",
     "addressValue": "Ağ Şəhər, Mərkəz Bulvar küçəsi 8",
-    "phoneValue": "+994 XX XXX XX XX",
+    "phoneValues": ["+994 50 222 34 48", "+994 50 824 12 22"],
     "emailValue": "info@airart.az",
     "hoursValue": "B.e — C, 09:00 — 18:00",
     "mapTitle": "Ofisin yerləşməsi",

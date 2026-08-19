@@ -27,7 +27,7 @@ interface Props {
   };
   contact: {
     addressValue: string;
-    phoneValue: string;
+    phoneValues: string[];
     emailValue: string;
   };
   serviceItems: Record<string, ServiceCopy>;
@@ -105,14 +105,16 @@ export function Footer({ locale, copy, nav, contact, serviceItems }: Props) {
               </h4>
               <ul className="mt-4 space-y-3 text-sm text-white/75">
                 <li>{contact.addressValue}</li>
-                <li>
-                  <a
-                    href={`tel:${contact.phoneValue.replace(/\s+/g, "")}`}
-                    className="hover:text-white"
-                  >
-                    {contact.phoneValue}
-                  </a>
-                </li>
+                {contact.phoneValues.map((phone) => (
+                  <li key={phone}>
+                    <a
+                      href={`tel:${phone.replace(/\s+/g, "")}`}
+                      className="hover:text-white"
+                    >
+                      {phone}
+                    </a>
+                  </li>
+                ))}
                 <li>
                   <a
                     href={`mailto:${contact.emailValue}`}
