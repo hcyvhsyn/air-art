@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import Script from "next/script";
 import { notFound } from "next/navigation";
 import "../globals.css";
 import { LOCALES, hasLocale, type Locale } from "@/lib/i18n";
@@ -19,6 +20,14 @@ const themeScript = `
     document.documentElement.style.colorScheme = "dark";
   }
 })();
+`;
+
+const clarityScript = `
+(function(c,l,a,r,i,t,y){
+  c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+  t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+  y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+})(window, document, "clarity", "script", "yclc30odko");
 `;
 
 const inter = Inter({
@@ -86,6 +95,11 @@ export default async function RootLayout({
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
       </head>
       <body className="min-h-full bg-[var(--page-bg)] text-[var(--page-fg)] antialiased transition-colors duration-300">
+        <Script
+          id="ms-clarity"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{ __html: clarityScript }}
+        />
         <PagePreloader />
         <FloatingThemeToggle />
         {children}
